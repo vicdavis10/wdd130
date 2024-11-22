@@ -1,6 +1,17 @@
+:root {
+    --padding: 10p;
+    --width: 200px;
+    --height: auto;
+    --border: 1px solid black;
+    --text-align: center;
+
+
+
+
+}
 nav {
     background-color: darkblue;
-    padding: 10px;
+    padding: var(--padding); /* padding: 10; */ 
 }
 
 nav a { 
@@ -14,14 +25,14 @@ h1 {
 
 img { 
     width: 150px;
-    height: auto;
-    border: 1px solid black;
+    height: var(--height); /*height:auto*/
+    border: var(--border); /*borde: 1px solid black*/
     padding: 2px;
     box-shadow: 0 0 30px gray; 
 }
 
 p {
-    padding: 10px;
+    padding: var(--padding); /* padding: 10; */ 
 }
 
 main {
@@ -31,29 +42,29 @@ main {
 aside {
     width: 600px;
     margin: 1rem;
-    border: 1px solid rgb(0,0,0,0.5);
+    border: var(--border); /*borde: 1px solid black*/
     padding: 2px;
     background-color: #b7e6d6;
     color:black;
-    text-align: center;
+    text-align: var(--text-align); /*text-align: center*/
 }
 
 aside img {
-    width: 200px;
-    height: auto;
+    width:var(--width) ; /*width:200px*/
+    height: var(--height);
 }
 
 main img{
-    width: 200px;
-    height: auto;
+    width: var(--width); /*width:200px*/
+    height: var(--height);
 }
 
 p { padding: 0;}
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid rgb(0,0,0,0.5);
-    text-align: center;
+    border-top: var(--border); /*1px solid black*/
+    text-align: var(--text-align);
 
 }
 
