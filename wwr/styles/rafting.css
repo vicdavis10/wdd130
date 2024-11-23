@@ -3,11 +3,11 @@
     --secondary-color: #FEDC56; /* Bright yellow */
     --accent1-color: #E7DB9C; /* Light beige */
     --accent2-color: #FDF0D5; /* Very light beige */
-    --heading-font: "Bebas Neue", serif;
+    --heading-font: "Bebas Neue","serif" ;
     --heading-letter-spacing: 2px;
     --heading-font-weight: 400;
     --heading-font-style: normal;
-    ---text-font: "Playfair display", sans-serif;
+    --text-font: "Playfair display","sans-serif";
 }
 
 * {
