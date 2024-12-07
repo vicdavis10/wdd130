@@ -235,11 +235,6 @@ footer a{
     
 }
 
-.information a {
-    text-decoration: none;
-    text-decoration-color: var(--primary-color); 
-}
-
 .contact-info {
     display: flex; 
     justify-content: space-between; 
