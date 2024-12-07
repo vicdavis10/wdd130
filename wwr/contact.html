@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Great Adventure Contact Us </title>
+    <meta name="description" content="Company information.Contact information for Great Adventure, contact us for inquiries about rafting, plan your next adventure with us">
+    <meta name="author" content="Victoria Delgado Davis">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/logo_rafting.png" alt="Logo" width="200">
+        <nav> 
+            <a href="index.html"> Home</a>
+            <a href="about.html"> About Us</a>
+            <a href="trips.html"> Trips</a>
+            <a href="contact.html"> Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="information">
+            <img src="images/river-wide-hero.jpg" alt="rafting cover image" width="1200">
+            <h1>Contact Us!</h1>
+            <article class="contact-info">
+                <div class="info">
+                    <p>Phone number: 555-555-5555</p>
+                    <p>Email: <a href="mailto:info@greatadventure.com">info@greatadventure.com</a></p>
+                    <p>Address: Santa Rosa, Turrialba, Cartago</p>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1637.021745844376!2d-83.70296935269396!3d9.927415578040192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scr!4v1733542581057!5m2!1ses-419!2scr"
+                        width="500" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </article>
+        </div>
+        <section class="employee"> <!-- Employee profile images with captions that include the titles of at least three, happy-looking employees. -->
+            <h1>Meet us!</h1>
+            <figure>
+                <img src="images/happy-employee1.jpg" alt="Happy employee 1" width="200" height="200">
+                <figcaption>Rafting Guide Shanik Clark</figcaption>
+            </figure>
+            <figure>
+                <img src="images/happy-employee2.jpg" alt="Happy employee 2" width="200" height="200">
+                <figcaption>Trip Coordinator Jessy Hidalgo</figcaption>
+            </figure>
+            <figure>
+                <img src="images/happy-employee3.jpg" alt="Happy employee 3" width="200" height="200">
+                <figcaption>Booking Agent Sabrina Conejo</figcaption>
+            </figure>
+        </section>
+        
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <!-- form elements will go here -->
+                <div class="form-item column1"> 
+                    <label for="username">User  name:</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div class="form-item column2"> 
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+            </fieldset>
+        
+            <fieldset> 
+                <legend>Purpose of the Message:</legend>
+                <!-- form elements will go here --> 
+                <div class="form-item column3">
+                    <div class="radio-group">
+                    <label for="general-inquiries">
+                        <input type="radio" id="general-inquiries" name="purpose" value="General Inquiries"> General Inquiries
+                    </label>
+                    <label for="reservation-questions">
+                        <input type="radio" id="reservation-questions" name="purpose" value="Reservation Questions"> Reservation Questions
+                    </label>
+                    <label for="website-suggestions">
+                        <input type="radio" id="website-suggestions" name="purpose" value="Website Suggestions"> Website Suggestions
+                    </label>
+                </div>
+                </div>
+                
+                <div class="form-item column4">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="Write your message here:"></textarea>
+                    </div>
+                    <div>
+                    <label for="subscribe">
+                        <input type="checkbox" name="subscribe" id="subscribe"> Please subscribe me to the monthly newsletter
+                    </label>
+                </div>
+            </fieldset>
+            
+            <button type="submit">Submit</button>
+        </form>
+        </section>
+    </main>
+
+    <footer>
+        <P>&copy; 2024 Great Adventure Victoria Delgado Davis</P>
+        <nav class="socialmedia"> 
+            <a href="https://www.facebook.com/">
+                <img src="images/facebook_icon.png" alt="facebook" width="30" >
+            </a>
+            <a href="http://www.instagram.com">
+                <img src="images/instagram_icon.png" alt="instagram" width="30">
+            </a>
+            <a href="http://www.twitter.com">
+                <img src="images/twitter_icon.png" alt="twitter" width="30">
+        </nav>
+        <a href="https://app.moqups.com/Sd4sx1gElGjPhnZbZwv9DUTheDaqZ3d9/view/page/ad64222d5"> Contact Us wireframe </a>
+    </footer>
+</body>
+</html>
