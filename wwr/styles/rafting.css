@@ -1,8 +1,8 @@
 :root {
     --primary-color: #1E4C7A; /* Dark blue */
-    --secondary-color: #FEDC56; /* Bright yellow */
-    --accent1-color: #E7DB9C; /* Light beige */
-    --accent2-color: #FDF0D5; /* Very light beige */
+    --secondary-color:#FEDC56 ; /* Bright yellow */
+    --accent1-color: #fdaf48fc; /* Light beige */
+    --accent2-color: #f2e9e4; /* Very light beige */
     --heading-font: "Bebas Neue","serif" ;
     --heading-letter-spacing: 2px;
     --heading-font-weight: 400;
@@ -38,7 +38,7 @@ header nav {
 }
 
 header nav a {
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--accent2-color);
     background-color: var(--primary-color);
     padding: 10px 40px; 
     text-decoration: none; 
@@ -371,3 +371,201 @@ button:hover {
 }
 
 
+/* index page */
+
+.columns-homep {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: 1fr;
+    place-items: center; 
+    margin: 25px auto;
+    padding: 1rem;
+    grid-gap: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+.groups-discount, .return-discount {
+    background-color: var(--accent2-color);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: none;
+    height: 100%;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    flex-grow: 1;
+}
+ 
+
+.columns-homep p {
+    text-align: justify;
+    color:var(--primary-color);
+    font: var(--text-font);
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.columns-homep p::before {
+    content: "\2022";
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    margin-right: 5px;
+}
+
+
+
+
+.card-contact form {
+    width: 89%;
+    margin: 25px auto;
+    border: 1px var(--primary-color);
+    padding: 0;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: #eee;
+    display: grid; 
+}
+
+
+
+.card-contact legend {
+    font-size: 1.5em;
+    color: var(--primary-color);
+    padding: 0.5rem;
+}
+
+.card-contact input[type="text"], .card-contact input[type="email"] {
+   margin-left: 0;
+    font-size: 0.8em;
+    padding: 0.2rem 0.8rem;
+    font-family: var(--text-font);
+}
+
+.card-contact a{
+    text-decoration: none;
+    color:var(--accent1-color);
+    font: var(--text-font);
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+
+.groups-discount a, .return-discount a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.7rem;
+    padding-bottom: 10px;
+}
+
+.groups-discount .title a, .return-discount .title a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+.groups-discount img {
+    display: block;
+    width: 100%; 
+    object-fit: cover;
+    padding-top: 30px;
+}
+
+ .return-discount img {
+    display: block;
+    width: 100%; 
+    object-fit: cover;
+}
+
+
+/* trip page*/
+
+.rows {
+    display: grid;
+    grid-template-rows: auto repeat(3, 1fr); 
+    gap: 15px; 
+    place-items: center;
+    padding: 20px;
+}
+
+.rows h2 {
+    grid-row: 1 / 2; 
+    font-size: 3rem;
+    text-align: center;
+}
+
+.rows figure {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rows figure img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.rows figure:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.rows p {
+    text-align: justify;
+    margin: 0;
+}
+
+.rows a {
+    text-align: center;
+    text-decoration: none;
+    color:var(--primary-color);
+    font-weight: bold;
+}
+
+
+
+
+/*table part*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+    text-align: left;
+}
+
+th, td {
+    border: 1px solid var(--primary-color);
+    padding: 10px;
+}
+
+thead {
+    background-color:var(--primary-color);
+    font-weight: bold;
+}
+
+thead th {
+    color: #fff;
+}
+
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+td:last-child {
+    font-weight: bold; /* Highlight the cost column */
+    color: #2a9d8f;
+    text-align: right; /* Align cost to the right */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
